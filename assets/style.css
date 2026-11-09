@@ -1,0 +1,46 @@
+:root {
+  --ink: #0B1426; --ink2: #4A5878; --ink3: #6B7896;
+  --line: #E5E8EF; --bg: #F2F3F7; --navy: #00356A; --accent: #0C2E5C;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6; -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
+header.page {
+  background: #fff; border: 1px solid var(--line); border-radius: 18px;
+  padding: 28px 28px 22px; margin-bottom: 22px;
+}
+.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.logo {
+  width: 44px; height: 44px; border-radius: 11px; flex: none;
+  background: linear-gradient(135deg, var(--accent), var(--navy));
+  color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 18px;
+}
+h1 { font-size: 24px; margin: 0; letter-spacing: -0.4px; }
+.sub { color: var(--ink3); font-size: 14px; margin-top: 2px; }
+.updated { color: var(--ink3); font-size: 13px; margin-top: 14px; }
+.nav { margin-top: 14px; display: flex; gap: 16px; flex-wrap: wrap; }
+.nav a { color: var(--navy); font-size: 14px; font-weight: 600; text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+.card {
+  background: #fff; border: 1px solid var(--line); border-radius: 18px;
+  padding: 24px 28px; margin-bottom: 18px;
+}
+h2 { font-size: 19px; margin: 28px 0 10px; letter-spacing: -0.2px; }
+h2:first-child { margin-top: 0; }
+h3 { font-size: 15px; margin: 18px 0 6px; color: var(--accent); }
+p, li { font-size: 15px; color: var(--ink); }
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+th, td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; }
+th { background: #EFF3FB; font-weight: 700; color: var(--accent); }
+a { color: var(--navy); }
+.muted { color: var(--ink3); font-size: 13px; }
+.app-list { list-style: none; padding: 0; }
+.app-list li { margin-bottom: 14px; }
+.app-list a { font-weight: 600; font-size: 16px; }
+footer.page { text-align: center; color: var(--ink3); font-size: 13px; margin-top: 24px; }
